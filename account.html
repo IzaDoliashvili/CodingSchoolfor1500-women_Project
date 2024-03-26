@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>რეგისტრაცია</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/account.css">
+    <link rel="stylesheet"
+         href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <script src="js/script.js" ></script>
+    <script src="js/busket.js" async></script>
+    <script src="js/header.js"></script>
+    <script    src="js/account.js"></script>
+    
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo"><img src="img/unnamed.jpg" alt=""><i>მღებრიშვილის თაფლი</i></a>
+    
+        <ul class="navlist">
+            <li><a href="index.html" class="active">მთავარი</a></li>
+            <li><a href="aboutus.html">ჩვენ შესახებ</a></li>
+            <li><a href="busket.html">ჩვენი მაღაზია</a></li>
+            <li><a href="account.html">რეგისტრაცია</a></li>
+            <li><a href="#contact">კონტაქტი</a></li>
+        </ul>
+        <div class="nav-icons">
+          <a href="account.html"><i class='bx bx-user'></i></a>
+          <a href="busket.html" id="cartIcon"><i class='bx bx-cart'></i></a>
+          <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+    <div class="container">
+        <div id="registrationForm" class="form">
+            <h2>რეგისტრაცია</h2>
+            <label for="email">მეილი:</label>
+            <input type="email" id="email" required>
+            <label for="password">პაროლი:</label>
+            <input type="password" id="password" required>
+            <label for="confirmPassword">გაიმეორეთ პაროლი:</label>
+            <input type="password" id="confirmPassword" required>
+            <button onclick="registration()" class="account-btn">რეგისტრაცია</button>
+            <p id="regMess"></p>
+        </div>
+        
+        <div id="authorizationForm" class="form">
+            <h2>ავტორიზაცია</h2>
+            <label for="authEmail">მეილი:</label>
+            <input type="email" id="authEmail" required>
+            <label for="authPassword">პაროლი:</label>
+            <input type="password" id="authPassword" required>
+            <button onclick="authorize()" class="account-btn">შესვლა</button>
+            <p id="authMess"></p>
+        </div>
+    </div>
+    <footer class="contact" id="contact">
+        <div class="contact-content">
+            <div class="social">
+              <a href="#" class="clr"><i class='bx bxl-instagram-alt'></i></a>
+              <a href="https://m.facebook.com/people/%E1%83%9B%E1%83%A6%E1%83%94%E1%83%91%E1%83%A0%E1%83%98%E1%83%A8%E1%83%95%E1%83%98%E1%83%9A%E1%83%98%E1%83%A1-%E1%83%97%E1%83%90%E1%83%A4%E1%83%9A%E1%83%98/61550660580230/"><i class='bx bxl-facebook'></i></a>
+              <a href="#"><i class='bx bxl-twitter'></i></a>
+              <a href="#"><i class='bx bxl-whatsapp'></i></a>
+              <a href="#"><i class='bx bxl-google'></i></a>
+      
+            </div>
+          </div>
+      
+          <div class="details">
+            <div class="main-d">
+              <a href="#"><i class='bx bxs-location-plus'></i>გორი,სუხიშვილის ქ.24</a>
+            </div>
+      
+            <div class="main-d">
+              <a href="#"><i class='bx bx-mobile-alt'></i></i>+995598225406</a>
+            </div>
+      
+            <div class="main-d">
+              <a href="https://www.youtube.com/watch?v=-fNcRUHvFW0"><i class='bx bxl-youtube'></i></i>თეოლოგი მეფუტკრე</a>
+            </div>
+      
+            
+          </div>
+        </div>
+      
+      </footer>
+    
+
+    
+    
+</body>
+</html>
